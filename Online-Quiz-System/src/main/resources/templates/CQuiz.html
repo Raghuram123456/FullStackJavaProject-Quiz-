@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CQuizz.css">
+    <title>C Programming Quiz</title>
+</head>
+<body>
+<form id="selectionForm" method="post" action="/submitCQuiz" class="form">
+    <h1>C Programming Quiz</h1><br/>
+    <div class="quiz" th:each="questionItem : ${cQuestionList}">
+        <h2 th:text="${questionItem.QuestionText}">Question goes here</h2>
+        <div th:each="answerItem : ${questionItem.answers}">
+            <label>
+                <input type="radio" th:name="${'question_' + questionItem.QuestionId}" th:value="${answerItem.AnswerId}" />
+                <span th:text="${answerItem.AnswerText}">Answer goes here</span>
+            </label>
+        </div>
+    </div>
+    <button type="submit" class="btn">Submit Quiz</button>
+</form>
+</body>
+</html>

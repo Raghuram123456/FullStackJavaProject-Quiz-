@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Dashboard</title>
+    <link rel="stylesheet" href="Home.css">
+</head>
+<body>
+<div class="dashboard-container">
+    <div class="flex-container">
+        <div><img src="logo3.png" alt="Logo" class="logo" height="105px" width="65%"></div>
+        <div class=""><a th:href="@{/getLogin}" class="login">Login</a></div>
+    </div>
+</div>
+
+
+<!-----------------------------------------CARDS---------------------------------------->
+
+
+<div class="cardcard">
+    <div class="container">
+        <div class="card">
+            <img src="https://www.guru99.com/images/java-quiz.png" alt="Course 1 Image">
+            <div class="card-content">
+                <h2>Java Programming</h2>
+                <a th:href="@{/getJavaQuizz}" class="">Start the Quizz</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibHdD1QYifLKcmM6vmY4teqXeKJlfLNrC0Ih9upopykdCCUFtXy9Vm4rd4uNfo0p21o5iQTxzJtIZqdWzRtzg5IDa23LhwzC_cCuDKOyDSGlFbvZhuChK7a8qKMin77m9ZLPZCFr7AFGc/w1200-h630-p-k-no-nu/c-programming-quiz.png" alt="Course 1 Image">
+            <div class="card-content">
+                <h2>C Programming</h2>
+                <a th:href="@{/getCQuiz}" class="startquizz">Start the Quizz</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://pythongeeks.org/wp-content/uploads/2021/12/python-quiz-questions-1200x675.webp" alt="Course 1 Image">
+            <div class="card-content">
+                <h2>Python Programming</h2>
+                <a href="#" class="startquizz">Start the Quizz</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://seldomindia.com/wp-content/uploads/2023/04/Screenshot-2023-04-28-141458.png" alt="Course 1 Image">
+            <div class="card-content">
+                <h2>JavaScript Programming</h2>
+                <a href="#" class="startquizz">Start the Quizz</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://codingtorque.com/wp-content/uploads/2023/05/7.png" alt="Course 1 Image">
+            <div class="card-content">
+                <h2>React Programming</h2>
+                <a href="#" class="startquizz">Start the Quizz</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

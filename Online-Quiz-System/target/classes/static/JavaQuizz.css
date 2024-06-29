@@ -1,0 +1,144 @@
+body {
+    background-color: black;
+}
+
+.form {
+    background-color: #ffffff;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.form h1 {
+    font-size: 25px;
+    color: #001e4d;
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px;
+}
+
+.quiz {
+    padding: 20px 0;
+}
+
+.quiz h2 {
+    font-size: 18px;
+    color: #001e4d;
+    font-weight: 600;
+}
+
+.btn {
+    background: #fff;
+    color: #222;
+    font-weight: 500;
+    width: 20%;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #222;
+    color: #fff;
+}
+
+
+/** {*/
+/*    margin:0;*/
+/*    padding:0;*/
+/*    font-family: 'Poppins',sans-serif;*/
+/*}*/
+/*body {*/
+/*        background-color: black;*/
+/*        !*margin: 0;*!*/
+/*        !*padding: 0;*!*/
+/*        !*display: flex;*!*/
+/*        !*justify-content: center;*!*/
+/*        !*align-items: center;*!*/
+/*        !*height: 100vh;*!*/
+/*    }*/
+/*.form{*/
+/*    background-color: #ffffff;*/
+/*    width: 90%;*/
+/*    max-width: 600px;*/
+/*    margin: 100px auto 0;*/
+/*    border-radius: 10px;*/
+/*    padding: 30px;*/
+/*}*/
+/*.form h1{*/
+/*    font-size: 25px;*/
+/*    color: #001e4d;*/
+/*    font-weight: 600;*/
+/*    border-bottom: 1px solid #333;*/
+/*    padding-bottom: 30px;*/
+/*}*/
+/*.quiz{*/
+/*    padding: 20px 0;*/
+/*}*/
+/*.quiz h2{*/
+/*    font-size: 18px;*/
+/*    color: #001e4d;*/
+/*    font-weight: 600;*/
+/*}*/
+/*.btn{*/
+/*    background: #fff;*/
+/*    color:#222;*/
+/*    font-weight:500;*/
+/*    width: 100%;*/
+/*    border: 1px solid #222;*/
+/*    padding: 10px;*/
+/*    margin: 10px 0;*/
+/*    text-align: left;*/
+/*    border-radius: 4px;*/
+/*    cursor: pointer;*/
+/*}*/
+/*.btn:hover{*/
+/*    background: #222;*/
+/*    color: #fff;*/
+/*}*/
+
+/*!*.question-container {*!*/
+/*!*        background-color: #fff;*!*/
+/*!*        border: 1px solid #ddd;*!*/
+/*!*        border-radius: 4px;*!*/
+/*!*        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*!*/
+/*!*        padding: 20px;*!*/
+/*!*        max-width: 600px;*!*/
+/*!*        width: 100%;*!*/
+/*!*    }*!*/
+/*!*.question {*!*/
+/*!*        font-size: 18px;*!*/
+/*!*        font-weight: bold;*!*/
+/*!*        margin-bottom: 15px;*!*/
+/*!*    }*!*/
+/*!*.options {*!*/
+/*!*    display: flex;*!*/
+/*!*    flex-direction: column;*!*/
+/*!*}*!*/
+/*!*.option{*!*/
+
+/*!*    }*!*/
+/*!*}*!*/
+/*!*!*.option {*!*!*/
+/*!*!*    margin-bottom: 10px;*!*!*/
+/*!*!*}*!*!*/
+
+/*!*!*.option input {*!*!*/
+/*!*!*    margin-right: 10px;*!*!*/
+/*!*!*}*!*!*/
+
+/*!*!*.option label {*!*!*/
+/*!*!*    font-size: 16px;*!*!*/
+/*!*!*}*!*!*/
+/** {*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    font-family: 'Poppins', sans-serif;*/
+/*}*/
+
+

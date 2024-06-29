@@ -1,0 +1,97 @@
+<!--&lt;!&ndash;<!DOCTYPE html>&ndash;&gt;-->
+<!--&lt;!&ndash;<html lang="en" xmlns:th="http://www.thymeleaf.org">&ndash;&gt;-->
+<!--&lt;!&ndash;<head>&ndash;&gt;-->
+<!--&lt;!&ndash;    <meta charset="UTF-8">&ndash;&gt;-->
+<!--&lt;!&ndash;    <meta name="viewport" content="width=device-width, initial-scale=1.0">&ndash;&gt;-->
+<!--&lt;!&ndash;    <link rel="stylesheet" href="JavaQuizz.css">&ndash;&gt;-->
+<!--&lt;!&ndash;    <title>Multiple Choice Question</title>&ndash;&gt;-->
+<!--&lt;!&ndash;</head>&ndash;&gt;-->
+<!--&lt;!&ndash;<body>&ndash;&gt;-->
+<!--&lt;!&ndash;<form id="selectionForm" method="post" action="/" class="form">&ndash;&gt;-->
+<!--&lt;!&ndash;    <h1>Java Quiz</h1><br/>&ndash;&gt;-->
+<!--&lt;!&ndash;    <div class="quiz">&ndash;&gt;-->
+<!--&lt;!&ndash;        <h2>Question goes here</h2>&ndash;&gt;-->
+<!--&lt;!&ndash;        <div>&ndash;&gt;-->
+<!--&lt;!&ndash;            <button class="btn">Ans 1</button>&ndash;&gt;-->
+<!--&lt;!&ndash;            <button class="btn">Ans 1</button>&ndash;&gt;-->
+<!--&lt;!&ndash;            <button class="btn">Ans 1</button>&ndash;&gt;-->
+<!--&lt;!&ndash;            <button class="btn">Ans 1</button>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        <button id&ndash;&gt;-->
+<!--&lt;!&ndash;    </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;&lt;!&ndash;    <ul>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;        <li th:each="questionItem : ${questionList}">&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;                <span>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;                    <span th:text="${questionItem.QuestionId}"></span>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;                    <span th:text="${questionItem.QuestionText}"></span><br/><br/>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;                    <button th:each="answerItem : ${answerList}">&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;                        <span th:text="${answerItem.AnswerText}" class="option"></span>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;                    </button>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;                </span><br><br>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;            <hr>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;        </li>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;    </ul>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;</form>&ndash;&gt;-->
+
+<!--&lt;!&ndash;&lt;!&ndash;    <ul>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;        <li th:each="answerItem : ${answerList}">&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;                    <span>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;                        <span th:text="${answerItem.AnswerId}"></span>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;                        <span th:text="${answerItem.QuestionId}"></span>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;                        <span th:text="${answerItem.AnswerText}"></span>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;                        <span th:text="${answerItem.CorrectAnswer}"></span>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;                    </span><br><br>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;            <hr>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;        </li>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;    </ul>&ndash;&gt;&ndash;&gt;-->
+
+<!--&lt;!&ndash;</body>&ndash;&gt;-->
+<!--&lt;!&ndash;</html>&ndash;&gt;-->
+<!--<!DOCTYPE html>-->
+<!--<html lang="en" xmlns:th="http://www.thymeleaf.org">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <link rel="stylesheet" href="JavaQuizz.css">-->
+<!--    <title>Multiple Choice Question</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<form id="selectionForm" method="post" action="/" class="form">-->
+<!--    <h1>Java Quiz</h1><br/>-->
+<!--    <div class="quiz" th:each="questionItem : ${questionList}">-->
+<!--        <h2 th:text="${questionItem.QuestionText}">Question goes here</h2>-->
+<!--        <div th:each="answerItem : ${questionItem.answers}">-->
+<!--            <button class="btn" type="button" th:text="${answerItem.AnswerText}">Ans 1</button>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</form>-->
+<!--</body>-->
+<!--</html>-->
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="JavaQuizz.css">
+    <title>Multiple Choice Question</title>
+</head>
+<body>
+<form id="selectionForm" method="post" action="/submitQuiz" class="form">
+    <h1>Java Quiz</h1><br/>
+    <div class="quiz" th:each="questionItem : ${questionList}">
+        <h2 th:text="${questionItem.QuestionText}">Question goes here</h2>
+        <div th:each="answerItem : ${questionItem.answers}">
+            <label>
+                <input type="radio" th:name="${'question_' + questionItem.QuestionId}" th:value="${answerItem.AnswerId}" />
+                <span th:text="${answerItem.AnswerText}">Answer goes here</span>
+            </label>
+        </div>
+    </div>
+<!--    <button type="submit" class="btn">Submit Quiz</button>-->
+    <a th:href="@{/getResult}" class="btn">Submit Quiz</a>
+</form>
+</body>
+</html>
+
